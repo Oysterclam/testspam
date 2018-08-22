@@ -19,7 +19,7 @@ driver.find_element_by_xpath("//*[@id='loginbutton']").click()
 def createChat(name):
 	for a in range(3):
 		driver.find_element_by_xpath('//*[@id="u_0_0"]/div/div/div[1]/div[1]/a').click()
-		driver.find_elements_by_class_name('_58al')[1].send_keys('Andy J Yang')
+		driver.find_elements_by_class_name('_58al')[1].send_keys('Andy J Yang') #add member
 		time.sleep(0.5)
 		driver.find_elements_by_class_name('_58al')[1].send_keys(Keys.RETURN)
 		driver.find_elements_by_class_name('_58al')[1].send_keys('Oscar Chou')
@@ -31,12 +31,12 @@ def createChat(name):
 
 		driver.find_element_by_class_name('_2jnv').click()
 		time.sleep(0.25)
-		driver.find_elements_by_class_name('notranslate')[0].send_keys('000'+str(a))
+		driver.find_elements_by_class_name('notranslate')[0].send_keys(name) #chat name
 		driver.find_elements_by_class_name('notranslate')[0].send_keys(Keys.RETURN)
 		time.sleep(2)
 
 	# driver.find_elements_by_class_name('')
-createChat('h')
+createChat('hello')
 print('jhi')
 
 #driver.find_element_by_xpath('//*[@id="cch_f2c3370eb4651e8"]/div[2]/div[2]/div[2]/div[1]/div/div[1]/div/div[1]/div/div[2]/div/div/div/div').click()
