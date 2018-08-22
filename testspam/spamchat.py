@@ -13,9 +13,7 @@ password="iamveryfat"
 driver.find_element_by_xpath("//*[@id='email']").send_keys(email)
 driver.find_element_by_xpath("//*[@id='pass']").send_keys(password)
 driver.find_element_by_xpath("//*[@id='loginbutton']").click()
-#driver.find_element_by_xpath("//*[@id='js_8']/div/div/div[1]/span[1]/label/input").send_keys("Andy J Yang")
-# #driver.find_element_by_xpath('//*[@id="cch_f1529a37fb9fc38"]/div[2]/div[2]/div[2]/div[1]/div/div[1]/div/div[1]/div/div[2]').click()
-# driver.find_element_by_xpath('//*[@id="cch_f251cd0adefcef8"]/div[2]/div[2]/div[2]/div[1]/div/div[1]/div/div[1]/div/div[2]/div/div/div/div').click()
+
 def createChat(name):
 	for a in range(3):
 		driver.find_element_by_xpath('//*[@id="u_0_0"]/div/div/div[1]/div[1]/a').click()
@@ -37,6 +35,4 @@ def createChat(name):
 
 	# driver.find_elements_by_class_name('')
 createChat('hello')
-print('jhi')
-
-#driver.find_element_by_xpath('//*[@id="cch_f2c3370eb4651e8"]/div[2]/div[2]/div[2]/div[1]/div/div[1]/div/div[1]/div/div[2]/div/div/div/div').click()
+print('succeed')
